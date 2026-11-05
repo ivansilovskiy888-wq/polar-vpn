@@ -1,1 +1,6 @@
-
+aiogram==3.22.0
+fastapi
+uvicorn
+sqlalchemy
+aiosqlite
+python-dotenv
