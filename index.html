@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POLAR VPN</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #070b12;
+  color: #f2f8ff;
+  font-family: Arial, sans-serif;
+  padding: 24px 18px;
+}
+.app { max-width: 440px; margin: auto; }
+header { display:flex; align-items:center; justify-content:space-between; }
+.logo { font-size:25px; font-weight:900; letter-spacing:2px; }
+.logo span { color:#54cfff; }
+.status { color:#66e5b0; font-size:12px; }
+h1 { font-size:29px; margin:35px 0 8px; }
+.subtitle { color:#8294aa; font-size:14px; }
+.card {
+  background:linear-gradient(145deg,#14283c,#0c1522);
+  border:1px solid #24425d;
+  border-radius:22px;
+  padding:22px;
+  margin-top:24px;
+}
+.balance { color:#8ca7c2; font-size:13px; }
+.time { font-size:32px; font-weight:bold; margin:9px 0; }
+.time span { color:#56cfff; }
+.connect {
+  width:100%; border:0; border-radius:16px;
+  padding:17px; margin-top:20px;
+  background:linear-gradient(90deg,#168bd2,#55d5ff);
+  color:#04111c; font-size:17px; font-weight:bold;
+}
+.server { display:flex; justify-content:space-between; margin-top:20px; color:#c8d8e8; }
+.section-title { margin:30px 0 14px; font-size:19px; }
+.menu { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.item {
+  background:#101a28; border:1px solid #1c3045;
+  border-radius:17px; padding:19px 14px;
+}
+.item strong { display:block; margin-bottom:7px; }
+.item small { color:#8294aa; }
+.play { border-color:#28516a; }
+footer { text-align:center; color:#60758b; font-size:12px; margin:30px 0 10px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="logo">POLAR <span>VPN</span></div>
+    <div class="status">● Сервис готов</div>
+  </header>
+
+  <h1>Добро пожаловать!</h1>
+  <div class="subtitle">Твой личный ледяной щит в интернете.</div>
+
+  <div class="card">
+    <div class="balance">ТВОЙ БАЛАНС VPN</div>
+    <div class="time">24 <span>часа</span></div>
+    <div class="subtitle">Доступное время подписки</div>
+    <button class="connect" onclick="toggleConnection()">Подключить VPN</button>
+    <div class="server">
+      <span>🌍 Сервер</span>
+      <span>Германия</span>
+    </div>
+  </div>
+
+  <div class="section-title">Твой POLAR</div>
+  <div class="menu">
+    <div class="item">
+      <strong>👤 Профиль</strong>
+      <small>Личный кабинет</small>
+    </div>
+    <div class="item">
+      <strong>💎 Подписка</strong>
+      <small>Тарифы и время</small>
+    </div>
+    <div class="item play">
+      <strong>🎮 POLAR PLAY</strong>
+      <small>Играй и получай минуты</small>
+    </div>
+    <div class="item play">
+      <strong>❄️ POLAR MINING</strong>
+      <small>Добывай POLAR COINS</small>
+    </div>
+  </div>
+
+  <footer>POLAR VPN · YOUR PRIVATE SPACE</footer>
+</div>
+
+<script>
+function toggleConnection() {
+  alert("Подключение появится после настройки VPN-серверов.");
+}
+</script>
+</body>
+</html>
